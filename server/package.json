@@ -10,9 +10,12 @@
   "author": "Shambhavi Shandilya",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.24.0",
     "crypto": "^1.0.1",
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
+    "generate-password": "^1.6.1",
+    "google-auth-library": "^7.10.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.12",
     "nodemailer": "^6.7.0",
