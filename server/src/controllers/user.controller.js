@@ -1,5 +1,6 @@
 const User = require('../models/user.model');
 const Profile = require('../models/profile.model');
+const Score = require('../models/score.model');
 const utils = require('../services/auth.service');
 const generatePassword = require('generate-password');
 const sendMail = require('../services/email.service');
@@ -54,6 +55,15 @@ const registerUser = async (fullname, username, password, email, status, lichess
   });
 
   const profile = await newProfile.save();
+
+  const newScore = new Score({
+    username: user.username,
+    wins: 0,
+    loss: 0,
+    draw: 0
+  });
+
+  const score = await newScore.save();
 
   return user;
 };
@@ -282,6 +292,7 @@ const login = async (req, res, next) => {
         });
 
   } catch (err) {
+    console.log(err);
     return res.json({ success: false, msg: err });
   }
 
