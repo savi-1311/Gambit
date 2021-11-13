@@ -1,0 +1,215 @@
+.profile-not-found {
+    color: #66fcf1;
+    font-weight: bold;
+    font-size: 1.75rem;
+  }
+  .profile-page-container {
+    position: relative;
+  }
+  .profile-page {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 700px;
+    min-width: 320px;
+    margin: 0 auto 15px;
+    padding: 16px;
+    color: white;
+  }
+  .profile-page__background-svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 1;
+    fill: #343a40;
+    fill-opacity: 1;
+  }
+  .profile-page__top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .profile-page__bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 60px;
+  }
+  .profile-page__immutable-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .profile-page__field {
+    margin: 10px 0;
+  }
+  .profile-page__label {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 2px 0;
+    overflow-x: auto;
+  }
+  .profile-page__value {
+    display: block;
+    color: #66fcf1;
+    margin: 2px 0;  
+    overflow-x: auto;
+  }
+  .profile-page__editAvatarIcon{
+    margin-top: 114px;
+    margin-left: -27px;
+    color:#66fcf1;
+    cursor: pointer;
+  }
+  @-webkit-keyframes hvr-buzz-out {
+    10% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+      -webkit-transform: translateX(1px) rotate(0);
+      transform: translateX(1px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateX(-1px) rotate(0);
+      transform: translateX(-1px) rotate(0);
+    }
+  }
+  @keyframes hvr-buzz-out {
+    10% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+      -webkit-transform: translateX(1px) rotate(0);
+      transform: translateX(1px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateX(-1px) rotate(0);
+      transform: translateX(-1px) rotate(0);
+    }
+  }
+  .hvr-buzz-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+    -webkit-animation-name: hvr-buzz-out;
+    animation-name: hvr-buzz-out;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+  .profile-page__btn-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+  }
+  .profile-page__edit-profile-btn {
+    display: inline-block;
+    border: 2px solid #66fcf1;
+    border-radius: 8px;
+    background-color: transparent;;
+    color: #66fcf1;
+    padding: 15px;
+    margin: 10px;
+    transition: transform .2s;
+    font-weight: bold;
+    min-width: 150px;
+  }
+  .profile-page__edit-profile-btn:hover {
+    transform: translateY(-2px);
+  }
+  .profile-page__view-games-btn {
+    display: inline-block;
+    background-color: #66fcf1;
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    transition: transform .2s;
+    font-weight: bold;
+    min-width: 150px;
+  }
+  .profile-page__view-games-btn:hover {
+    transform: translateY(-2px);
+  }
+  
