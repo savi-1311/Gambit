@@ -16,6 +16,7 @@
     "crypto": "^1.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "generate-password": "^1.6.0",
     "google-auth-library": "^7.0.2",
     "googleapis": "^67.1.1",
@@ -33,7 +34,8 @@
   },
   "devDependencies": {
     "jest": "^26.4.2",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "supertest": "^6.1.6"
   },
   "author": "Shambhavi Shandilya",
   "license": "GPLv3"

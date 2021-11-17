@@ -23,3 +23,7 @@ test( 'User Model is not throwing error', () => {
     }).not.toThrow();
 
 });
+
+afterEach(() => {
+  jest.restoreAllMocks()
+})
