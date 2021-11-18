@@ -14,6 +14,7 @@ const { configAuth } = require('./configs/auth.config');
 const { configStorage } = require('./configs/storage.config');
 
 configDB();
+
 configAuth(passport);
 
 const app = express();
