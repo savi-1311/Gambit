@@ -2,6 +2,7 @@ const app = require('../../src/app');
 var supertest = require('supertest'); //require supertest
 const request = supertest(app); 
 const User = require('../../src/models/user.model');
+const Profile = require('../../src/models/profile.model');
 const { connect, connection } = require('mongoose');
 const prodMongoURI = process.env.PROD_DATABASE_URL || '';
 const devMongoURI = process.env.DEV_DATABASE_URL || '';
@@ -77,6 +78,16 @@ test("Confirmation email already verified", async done =>{
 
     const response = await request.post('/api/confirm').send(mockRequest);
     expect(response.body.msg).toBe("Your Email is already verified");
+    done();
+})
+
+test("Reset Password without registered email", async done =>{
+    const mockUser = {email: "mock-email"};
+    jest.spyOn(Profile, 'findOne')
+    .mockImplementationOnce(() => undefined)
+
+    const response = await request.post('/api/password/email').send(mockUser);
+    expect(response.body.msg).toBe("No account was registered with the given mail address");
     done();
 })
 

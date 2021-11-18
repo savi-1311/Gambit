@@ -4,6 +4,10 @@
 	"collectCoverage": true,
 	"collectCoverageFrom": [
 		"src/**/*.js",
+		"!src/controllers/user.controller.js",
+		"!src/controllers/game.controller.js",
+		"!src/services/chess.service.js",
+		"!src/routes/socket.route.js",
     "!**/node_modules/**"
 	],
 	"setupFiles": ["dotenv/config"],
