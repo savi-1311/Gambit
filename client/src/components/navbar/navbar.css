@@ -1,0 +1,75 @@
+.mynavbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #1d1e22;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+  }
+  
+  .dropdown-menu.show {
+    background: #1d1e22;
+  }
+  
+  .dropdown-item:hover {
+    background: #fafbff12;
+  }
+  
+  .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+  
+  .navbar-brand {
+    margin: 0;
+  }
+  
+  .tooltip-main {
+    width: fit-content;
+    border-radius: 50%;
+    font-weight: 700;
+    background: #f3f3f3;
+    border: 1px solid #737373;
+    color: #737373;
+    margin: 4px 121px 0 5px;
+    text-align: left;
+  }
+  
+  .tooltip-inner {
+    width: fit-content;
+    font-size: 12px;
+    padding: 2px 10px 2px 10px;
+    background: #fff;
+    color: rgb(0, 0, 0, 0.7);
+    text-align: left;
+  }
+  
+  .bs-tooltip-bottom .arrow::before {
+    border-bottom-color: white;
+  }
+  
+  a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .mydropdown {
+    display: inline;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem;
+  }
+  
+  /****nav-link class for each link ****/
+  .hover-link:hover{
+    background-color: #8299fd;
+    transition: all 300ms ease-in-out;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.7);
+  }
