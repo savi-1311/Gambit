@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faArrowUp} from '@fortawesome/free-solid-svg-icons';
 function Contrib() {
     const [data, setData] = useState([]);
-    const url = "https://api.github.com/repos/fave77/pbchess/contributors";
+    const url = "https://api.github.com/repos/savi-1311/Gambit/contributors";
 
     const fetchURL = async () => {
         const response = await fetch(url);
