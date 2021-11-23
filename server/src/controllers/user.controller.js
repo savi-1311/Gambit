@@ -1,5 +1,6 @@
 const User = require('../models/user.model');
 const Profile = require('../models/profile.model');
+const Score = require('../models/score.model');
 const utils = require('../services/auth.service');
 const generatePassword = require('generate-password');
 const sendMail = require('../services/email.service');
@@ -13,7 +14,7 @@ const { configClient } = require('../configs/client.config');
 const CLIENT_URL = configClient();
 
 /* Following 5 functions perform user registration via 
-  Google <Oauth>, Lichess <OAuth>, Pbchess <POST /register>
+  Google <Oauth>, Lichess <OAuth>, gambit <POST /register>
 */
 
 
@@ -55,18 +56,27 @@ const registerUser = async (fullname, username, password, email, status, lichess
 
   const profile = await newProfile.save();
 
+  const newScore = new Score({
+    username: user.username,
+    wins: 0,
+    loss: 0,
+    draw: 0
+  });
+
+  const score = await newScore.save();
+
   return user;
 };
 
 // invokes registerUser for creating new record and sends confirmation mail 
-const registerViaPbChess = async (pbchessProfile) => {
+const registerViaGambit = async (gambitProfile) => {
 
-  const { fullname, username, password, email } = pbchessProfile;
+  const { fullname, username, password, email } = gambitProfile;
 
   const user = await registerUser(fullname, username, password, email, false);  
-  const message = `Thank you for registering at Pbchess. Your username is ${username}. 
+  const message = `Thank you for registering at Gambit. Your username is ${username}. Have a great day ahead. 
   Please confirm your email using the given link to continue to the site. ${CLIENT_URL}/confirm?userId=${user._id}`;
-  await sendMail(email, 'Thank you for registering at Pbchess', message);
+  await sendMail(email, 'Thank you for registering at Gambit', message);
   return user;
 
 }
@@ -91,8 +101,8 @@ const registerViaGoogle = async (googleProfile) => {
   }
 
   const user = await registerUser(fullname, username, password, email, true);
-  const message = `Thank you for registering at pbchess. Your username is ${username} and password is ${password}. Have a great day ahead!`;
-  await sendMail(email, 'Thank you for registering at Pbchess', message);
+  const message = `Thank you for registering at Gambit. Your username is ${username} and password is ${password}. Have a great day ahead!`;
+  await sendMail(email, 'Thank you for registering at Gambit', message);
   return user;
 
 }
@@ -118,13 +128,13 @@ const registerViaLichess = async (lichessProfile) => {
   }
 
   const user = await registerUser(fullname, username, password, email, true, lichessURL);
-  const message = `Thank you for registering at pbchess. Your username is ${username} and password is ${password}. Have a great day ahead!`;
-  await sendMail(email, "Thank you for registering at Pbchess", message)
+  const message = `Thank you for registering at Gambit. Your username is ${username} and password is ${password}. Have a great day ahead!`;
+  await sendMail(email, "Thank you for registering at Gambit", message)
   return user;
 
 };
 
-// Called when registering with Pbchess
+// Called when registering with Gambit
 const register = async (req, res) => {
 
   try {
@@ -139,7 +149,7 @@ const register = async (req, res) => {
       return res.status(409).json({ success: false, msg: 'An account with this email already exists! Try an alternate one...' });
       
 
-    const user = await registerViaPbChess(req.body);
+    const user = await registerViaGambit(req.body);
 
     return res.json({
       success: false,
@@ -153,7 +163,7 @@ const register = async (req, res) => {
 };
 
 /* Following 3 functions perform user login via 
-  Google <Oauth>, Lichess <OAuth>, Pbchess <POST /login>
+  Google <Oauth>, Lichess <OAuth>, gambit <POST /login>
 */
 
 // Called when signing in with Google
@@ -242,7 +252,7 @@ const lichessSignIn = async (accessToken, refreshToken, lichessProfile, done) =>
 
 };
 
-// Called when signing in with Pbchess
+// Called when signing in with gambit
 const login = async (req, res, next) => {
   try {
     const user = await User.findOne({ username: req.body.username });
@@ -282,6 +292,7 @@ const login = async (req, res, next) => {
         });
 
   } catch (err) {
+    console.log(err);
     return res.json({ success: false, msg: err });
   }
 

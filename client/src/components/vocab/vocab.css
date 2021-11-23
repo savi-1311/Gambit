@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .Container {
+    display: block;
+    /* margin: 0 auto; */
+    align-content: center;
+    text-align: center;
+    width: 80%;
+  }
+  .Terms {
+    margin-top: 30px;
+  }
+  .block {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: #1d1e22;
+  }
+  
+  .term-title {
+    width: 30%;
+    text-align: center;
+    padding-top: 4vh;
+    background-color: #8299fd;
+  }
+  
+  .meaning {
+    width: 70%;
+    background-color: #1d1e22;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+  }
+  
+  .tags {
+    text-align: center;
+    /* height: 150px; */
+  }
+  
+  .heading {
+    font-size: 3.5em;
+    color: #8299fd;
+    font-weight: 500;
+  }
+  .title-size {
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    animation: fadeIn 650ms ease-in-out 1s both;
+    cursor: pointer;
+  }
+  
+  .to-top {
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    animation: scrolltop 0.5s alternate ease infinite;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+   
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scrolltop {
+    from {
+      transform: translateY(2px);
+    }
+    
+    to {
+      transform: translateY(-1px);
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .title-size {
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .meaning {
+      font-size: 14px;
+      padding: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .title-size {
+      font-size: 10px;
+      font-weight: bolder;
+    }
+  }

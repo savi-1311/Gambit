@@ -1,0 +1,16 @@
+.timerContainer {
+    width: 512px;
+    height: 40px;
+    margin: 0;
+    display: flex;
+    color: #b9baba;
+    background-color: #0f1012;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .timerContainer h5 {
+    margin-bottom: 0.2rem;
+    width: 380px;
+    text-align: left;
+  }

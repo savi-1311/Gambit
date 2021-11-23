@@ -1,4 +1,5 @@
 .lobby-card {
+<<<<<<< HEAD
   width: 75%;
   max-width: 700px;
   padding: 20px 25px 15px;
@@ -24,3 +25,28 @@
 .btn-link:hover {
   color: #ffffff;
 }
+=======
+    width: 75%;
+    max-width: 700px;
+    padding: 20px 25px 15px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+  }
+  
+  .btn-pbchess {
+    background-color: #647dfc;
+    color: #ffffff;
+  }
+  
+  .btn-pbchess:hover {
+    background-color: #8299fd;
+  }
+  
+  .btn-link {
+    color: #647dfc;
+  }
+  
+  .btn-link:hover {
+    color: #ffffff;
+  }
+>>>>>>> a4260bcb2f4ff1279d1169ce527e473e3255dedb

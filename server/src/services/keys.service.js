@@ -9,7 +9,7 @@ const fs = require('fs');
 function genKeyPair() {
 
   const keyPair = crypto.generateKeyPairSync('rsa', {
-    modulusLength: 4096, // Number of bits - standard for RSA keys
+    modulusLength: 512, // Number of bits - standard for RSA keys
     publicKeyEncoding: {
       type: 'pkcs1', // "Public Key Cryptography Standards 1"
       format: 'pem' // Most common formatting choice

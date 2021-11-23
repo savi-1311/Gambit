@@ -1,4 +1,5 @@
 .boundary {
+<<<<<<< HEAD
   border-radius: 5px;
   background-color: white;
   text-align: center;
@@ -69,10 +70,83 @@
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;          /* Likely future */ 
 }
+=======
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    /* border: 2px rgb(112, 112, 240) solid; */
+    padding: .5rem;
+    min-height: 100%;
+    background: #151922;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.404);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in;
+    cursor: pointer;
+  }
+  .space {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding-bottom: 10rem;
+  }
+  
+  @media only screen and (min-width: 500px) {
+    .space {
+    grid-template-columns:1fr;
+    }
+  }
+  @media only screen and (min-width: 550px) and (max-width:846px) {
+    .space {
+    grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media only screen and (min-width: 850px) {
+    .space {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  .boundary:hover {
+    top: -2px;
+    box-shadow: 0px 0px 20px #8299fd;
+  }
+  
+  
+  .img {
+    width: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  
+    margin-bottom: 2rem;
+  }
+  
+  .page_container {
+    position: relative;
+  }
+
+  * {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */ 
+  }
+>>>>>>> a4260bcb2f4ff1279d1169ce527e473e3255dedb
 
 /***scroll-To-Top****/
 .scroll-To-Top
 {
+<<<<<<< HEAD
 cursor: pointer;
 position: fixed;
 bottom: 0.5rem;
@@ -96,3 +170,28 @@ to{
   transform: translateY(-1px);
 }
 }
+=======
+  cursor: pointer;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:#fff;
+  color: #1f1f1f;
+  z-index: 1;
+  font-size: 32px;
+  line-height: 48px;
+  animation: scrollTop 0.5s alternate ease infinite;
+}
+
+@keyframes scrollTop {
+  from{
+    transform: translateY(2px);
+  }
+  to{
+    transform: translateY(-1px);
+  }
+}
+>>>>>>> a4260bcb2f4ff1279d1169ce527e473e3255dedb

@@ -16,6 +16,7 @@ import Login from './components/login/login';
 import Register from './components/register/register';
 import Profile from './components/profile/profile';
 import Lobby from './components/lobby/lobby';
+import { AnalyzeGame } from './components/game/game';
 import Confirm from './components/confirm/confirm';
 import NotFound from './components/pagenotfound/page-not-found';
 import Contrib from './components/contrib/contrib.js';

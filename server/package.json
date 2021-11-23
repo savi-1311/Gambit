@@ -1,29 +1,42 @@
 {
   "name": "server",
-  "version": "1.0.0",
-  "description": "Backend Server for Gambit Application",
-  "main": "./src/app.js",
+  "version": "0.1.0",
+  "main": "server.js",
   "scripts": {
-    "start": "node ./src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-prebuild": "sudo npm install pm2 -g",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "dev": "nodemon -r dotenv/config src/app.js",
+    "test": "jest --config ./jest.config.json"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bluebird": "^3.7.2",
+    "chess.js": "^0.11.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "generate-password": "^1.6.0",
+    "google-auth-library": "^7.0.2",
+    "googleapis": "^67.1.1",
+    "helmet": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.5.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-lichess": "^1.1.0",
+    "redis": "^3.0.2",
+    "socket.io": "^2.4.1",
+    "socket.io-redis": "^5.4.0"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "supertest": "^6.1.6"
   },
   "author": "Shambhavi Shandilya",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.24.0",
-    "chess.js": "^0.12.0",
-    "crypto": "^1.0.1",
-    "express": "^4.17.1",
-    "fs": "^0.0.1-security",
-    "generate-password": "^1.6.1",
-    "google-auth-library": "^7.10.2",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.12",
-    "nodemailer": "^6.7.0",
-    "passport": "^0.5.0",
-    "passport-jwt": "^4.0.0",
-    "passport-lichess": "^2.0.0",
-    "redis": "^3.1.2",
-    "socket.io-redis": "^6.1.1"
-  }
+  "license": "GPLv3"
 }

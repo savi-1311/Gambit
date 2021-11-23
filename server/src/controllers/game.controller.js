@@ -1,5 +1,6 @@
 const { Chess } = require('chess.js');
 const { validatePawnPromotion, evaluateGame, saveGame } = require('../services/chess.service');
+const { updateScore } = require('../controllers/leaderboard.controller');
 const { Types } = require('mongoose');
 const Game = require('../models/game.model');
 
@@ -120,10 +121,11 @@ const movePiece = (io, socket, data, liveGames) => {
     game.state = chess.pgn();
     liveGames.hmset(gameId, '*', JSON.stringify(game));
 
-    if (chess.game_over()) {
+    if (true) {
       console.log('Game Over ==>', gameId);
       gameState.gameOver = evaluateGame(chess);
       await saveGame(gameId, game, gameState.gameOver.result, Game);
+      await updateScore(gameId, gameState);
       await liveGames.del(gameId);
     }
     io.to(gameId).emit('move_piece', gameState);
