@@ -1,0 +1,26 @@
+.lobby-card {
+  width: 75%;
+  max-width: 700px;
+  padding: 20px 25px 15px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+}
+
+.btn-pbchess {
+  background-color: #14f0f0;
+  color: #000000;
+  font-weight:500 ;
+}
+
+.btn-pbchess:hover {
+  background-color: #66fcf1;
+  font-weight:700 ;
+}
+
+.btn-link {
+  color: #66fcf1;
+}
+
+.btn-link:hover {
+  color: #ffffff;
+}
