@@ -1,8 +1,7 @@
+# Client-Side Documentation
+
 ## :ballot_box_with_check: Prerequisites
-- Node.js (version 12+)
 - npm (version 6+)
-- MongoDB (version 4+)
-- Redis (version 6+)
 - ✅ To avail Google authentication feature:
   - Google Client ID
 
