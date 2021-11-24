@@ -12,7 +12,9 @@
       "profile": "https://github.com/savi-1311",
       "contributions": [
         "code",
-        "doc"
+        "doc",
+        "review",
+        "test"
       ]
     }
   ],
