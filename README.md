@@ -76,6 +76,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/savi-1311"><img src="https://avatars.githubusercontent.com/u/56017960?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shambhavi Shandilya</b></sub></a><br /><a href="https://github.com/savi-1311/Gambit/commits?author=savi-1311" title="Code">💻</a> <a href="https://github.com/savi-1311/Gambit/commits?author=savi-1311" title="Documentation">📖</a> <a href="https://github.com/savi-1311/Gambit/pulls?q=is%3Apr+reviewed-by%3Asavi-1311" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/savi-1311/Gambit/commits?author=savi-1311" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/tend2infinity"><img src="https://avatars.githubusercontent.com/u/61948033?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Soumya Singh</b></sub></a><br /><a href="https://github.com/savi-1311/Gambit/commits?author=tend2infinity" title="Code">💻</a> <a href="#design-tend2infinity" title="Design">🎨</a> <a href="#infra-tend2infinity" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#platform-tend2infinity" title="Packaging/porting to new platform">📦</a></td>
+    <td align="center"><a href="https://github.com/chrysanthemum027"><img src="https://avatars.githubusercontent.com/u/69318862?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ishita Choudhary</b></sub></a><br /><a href="https://github.com/savi-1311/Gambit/commits?author=chrysanthemum027" title="Code">💻</a> <a href="#design-chrysanthemum027" title="Design">🎨</a> <a href="#content-chrysanthemum027" title="Content">🖋</a></td>
+
   </tr>
 </table>
 
