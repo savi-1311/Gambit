@@ -75,7 +75,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/savi-1311"><img src="https://avatars.githubusercontent.com/u/56017960?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shambhavi Shandilya</b></sub></a><br /><a href="https://github.com/savi-1311/Gambit/commits?author=savi-1311" title="Code">💻</a> <a href="https://github.com/savi-1311/Gambit/commits?author=savi-1311" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/savi-1311"><img src="https://avatars.githubusercontent.com/u/56017960?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shambhavi Shandilya</b></sub></a><br /><a href="https://github.com/savi-1311/Gambit/commits?author=savi-1311" title="Code">💻</a> <a href="https://github.com/savi-1311/Gambit/commits?author=savi-1311" title="Documentation">📖</a> <a href="https://github.com/savi-1311/Gambit/pulls?q=is%3Apr+reviewed-by%3Asavi-1311" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/savi-1311/Gambit/commits?author=savi-1311" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
