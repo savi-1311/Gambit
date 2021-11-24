@@ -1,5 +1,5 @@
-describe("game component", ()=>{
-    it("should render the correct game information",()=>{
+describe("profile component", ()=>{
+    it("should render the edit profile information",()=>{
         return new Promise(resolve=>setTimeout(resolve,100))
     });
 })

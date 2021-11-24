@@ -1,5 +1,5 @@
-describe("game component", ()=>{
-    it("should render the correct game information",()=>{
+describe("home component", ()=>{
+    it("should render the home component",()=>{
         return new Promise(resolve=>setTimeout(resolve,100))
     });
 })
