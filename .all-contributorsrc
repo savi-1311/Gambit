@@ -13,7 +13,24 @@
       "contributions": [
         "code",
         "design",
-        "content"
+        "content"}},
+      "login": "tend2infinity",
+      "name": "Soumya Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61948033?v=4",
+      "profile": "https://github.com/tend2infinity",
+      "contributions": [
+        "code",
+        "design",
+        "infra",
+        "platform"]},
+        {
+      "login": "savi-1311",
+      "name": "Shambhavi Shandilya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56017960?v=4",
+      "profile": "https://github.com/savi-1311",
+      "contributions": [
+        "code",
+        "doc"
       ]
     }
   ],
