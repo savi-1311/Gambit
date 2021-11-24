@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "chrysanthemum027",
+      "name": "Ishita Choudhary",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69318862?v=4",
+      "profile": "https://github.com/chrysanthemum027",
+      "contributions": [
+        "code",
+        "design",
+        "content"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Gambit",
+  "projectOwner": "savi-1311",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
