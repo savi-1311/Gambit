@@ -1,0 +1,35 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "tend2infinity",
+      "name": "Soumya Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61948033?v=4",
+      "profile": "https://github.com/tend2infinity",
+      "contributions": [
+        "code",
+        "design",
+        "infra",
+        "platform"]},
+        {
+      "login": "savi-1311",
+      "name": "Shambhavi Shandilya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56017960?v=4",
+      "profile": "https://github.com/savi-1311",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Gambit",
+  "projectOwner": "savi-1311",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
