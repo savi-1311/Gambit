@@ -1,5 +1,5 @@
-describe("game component", ()=>{
-    it("should render the correct game information",()=>{
+describe("navbar component", ()=>{
+    it("should render the navbar",()=>{
         return new Promise(resolve=>setTimeout(resolve,100))
     });
 })
