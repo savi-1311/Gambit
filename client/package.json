@@ -2,6 +2,22 @@
   "name": "gambit",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "verbose": true
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    },
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -13,7 +29,9 @@
     "react-lottie-player": "^1.4.1",
     "react-scripts": "4.0.3",
     "react-test-renderer": "^17.0.2",
-    "web-vitals": "^1.0.1"
+    "redux-saga": "^1.1.3",
+    "web-vitals": "^1.0.1",
+    "webpack-cli": "^4.9.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0"
   }
 }
