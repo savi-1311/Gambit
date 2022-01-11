@@ -4,7 +4,7 @@
 - npm (version 6+)
 - MongoDB (version 4+)
 - Redis (version 6+)
-- ✅ To avail Google and LiChess authentication feature:
+- ✅ To avail Google and LiChess authentication feature (Can work locally even without these- Gambit Authentication only):
   - Google Client ID and Secret Token
   - LiChess Client ID and Secret Token
 
@@ -48,6 +48,8 @@ Create `.env` files in both `client` and `server` folder with the following vari
 	- `GOOGLE_REFRESH_TOKEN=<your-google-oauthplayground-refresh-token>`
 	- `DEV_LICHESS_CLIENT_ID=<your-lichess-client-id>`
 	- `DEV_LICHESS_CLIENT_SECRET=<your-lichess-client-secret>`
+
+*Note: Change DEV to PROD prefix for deploying it to the production.*
 
 **Default Ports:**
 - React (or Client) - 3000
